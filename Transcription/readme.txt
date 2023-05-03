@@ -1,9 +1,9 @@
 This datapack allows players to copy existing enchanted books they have!
 
 How it works:
-First, place an empty book and quill onto a lecturn.
+First, place an empty book and quill onto a lectern.
 Then, make sure you put the desired enchanted book in your main hand, and nothing in your off hand.
-next, right click the lecturn! If you had 5 levels, the lecturn will be emptied and you will have a copy of the enchanted book in your off hand!
+next, right click the lectern! If you had 5 levels, the lectern will be emptied and you will have a copy of the enchanted book in your off hand!
 
 Notes:
 - there are sounds and particles for successful and failed attempts to "transcribe" an enchantment.
