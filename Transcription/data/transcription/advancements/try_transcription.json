@@ -13,26 +13,43 @@
 		"player_interacted_with_entity": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"location": {
-					"block": {
-						"blocks": ["minecraft:lectern"]
-					}
-				},
-				"item": {
-					"items": ["minecraft:enchanted_book"]
-				},
-				"player": [
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": [
+									"minecraft:lectern"
+								]
+							}
+						}
+					},
 					{
 						"condition": "minecraft:entity_properties",
 						"entity": "this",
 						"predicate": {
-							"type_specific": {
-								"type": "player"
+							"equipment": {
+								"mainhand": {
+									"items": [
+										"minecraft:enchanted_book"
+									]
+								}
 							}
 						}
 					}
 				]
-			}
+			},
+			"player": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"type_specific": {
+							"type": "player"
+						}
+					}
+				}
+			]
 		}
 	},
 	"rewards": {
